@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap 50 Eleman Örneği</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="100" tabindex="0">
+
+  <!-- Navbar -->
+  <nav id="navbar-example" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top mb-4 px-3">
+    <a class="navbar-brand" href="#">Bootstrap 50</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#components">Bileşenler</a></li>
+        <li class="nav-item"><a class="nav-link" href="#utilities">Yardımcılar</a></li>
+        <li class="nav-item"><a class="nav-link" href="#media">Görseller</a></li>
+        <li class="nav-item"><a class="nav-link" href="#forms">Formlar</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- COMPONENTS -->
+    <section id="components">
+      <h2 class="mb-4">🔧 Bootstrap Bileşenleri</h2>
+      <div class="row g-4">
+        <!-- 1. Accordion -->
+        <div class="col-md-6"><div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Accordion</button></h2>
+            <div id="collapseOne" class="accordion-collapse collapse show"><div class="accordion-body">Accordion content</div></div>
+          </div>
+        </div></div>
+
+        <!-- 2. Alert -->
+        <div class="col-md-6"><div class="alert alert-success">Success Alert!</div></div>
+
+        <!-- 3. Badge -->
+        <div class="col-md-6"><h4>Badge <span class="badge bg-warning text-dark">Yeni</span></h4></div>
+
+        <!-- 4. Breadcrumb -->
+        <div class="col-md-6"><nav><ol class="breadcrumb"><li class="breadcrumb-item"><a href="#">Ana</a></li><li class="breadcrumb-item active">Sayfa</li></ol></nav></div>
+
+        <!-- 5. Buttons -->
+        <div class="col-md-6"><button class="btn btn-primary">Buton</button></div>
+
+        <!-- 6. Button Group -->
+        <div class="col-md-6"><div class="btn-group"><button class="btn btn-outline-secondary">1</button><button class="btn btn-outline-secondary">2</button></div></div>
+
+        <!-- 7. Card -->
+        <div class="col-md-6"><div class="card"><div class="card-body">Kart içeriği</div></div></div>
+
+     <!-- 8. Carousel (Kayan Gerçek Fotoğraflar) -->
+<div class="col-md-12">
+  <div id="carouselExampleCaptions" class="carousel slide shadow rounded" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="Okyanus">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+          <h5>Doğayla Baş Başa</h5>
+          <p>Okyanus ve gökyüzü manzarası ile huzur bulun.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="Kamp alanı">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+          <h5>Macera Başlasın</h5>
+          <p>Kamp yaparak doğayı keşfetmeye hazır mısın?</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1531177071257-4676abc83d83?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="Dağ manzarası">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+          <h5>Yükseklere Tırman</h5>
+          <p>Doğanın zirvesine doğru yolculuk yap.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+
+        <!-- 9. Close -->
+        <div class="col-md-6"><button type="button" class="btn-close" aria-label="Close"></button></div>
+
+        <!-- 10. Collapse -->
+        <div class="col-md-6"><a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseX">Göster</a>
+          <div class="collapse mt-2" id="collapseX"><div class="card card-body">Çökme içeriği</div></div>
+        </div>
+
+        <!-- 11. Dropdown -->
+        <div class="col-md-6"><div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Menü</button>
+          <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Seçenek</a></li></ul>
+        </div></div>
+
+        <!-- 12. List Group -->
+        <div class="col-md-6"><ul class="list-group">
+          <li class="list-group-item">1</li>
+          <li class="list-group-item">2</li>
+        </ul></div>
+
+        <!-- 13. Modal Trigger -->
+        <div class="col-md-6"><button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Modal Aç</button></div>
+        <!-- 14. Modal -->
+        <div class="modal fade" id="exampleModal"><div class="modal-dialog"><div class="modal-content"><div class="modal-body">Modal içeriği</div></div></div></div>
+
+        <!-- 15. Navs -->
+        <div class="col-md-6"><ul class="nav nav-tabs"><li class="nav-item"><a class="nav-link active" href="#">Sekme</a></li></ul></div>
+
+        <!-- 16. Pagination -->
+        <div class="col-md-6"><nav><ul class="pagination"><li class="page-item active"><a class="page-link" href="#">1</a></li></ul></nav></div>
+
+        <!-- 17. Popover -->
+        <div class="col-md-6"><button class="btn btn-outline-dark" data-bs-toggle="popover" title="Popover" data-bs-content="Detaylı bilgi">Popover</button></div>
+
+        <!-- 18. Progress -->
+        <div class="col-md-6"><div class="progress"><div class="progress-bar w-75">75%</div></div></div>
+
+        <!-- 19. Spinner -->
+        <div class="col-md-6"><div class="spinner-border text-primary"></div></div>
+
+        <!-- 20. Toast -->
+        <div class="col-md-6"><button class="btn btn-success" id="showToast">Toast Göster</button></div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast">
+            <div class="toast-header"><strong class="me-auto">Bilgi</strong><button type="button" class="btn-close" data-bs-dismiss="toast"></button></div>
+            <div class="toast-body">Bu bir toast örneğidir.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- UTILITIES -->
+    <section id="utilities">
+      <h2 class="mb-4">🧰 Yardımcı Sınıflar</h2>
+      <div class="row g-4">
+        <!-- 21. Tooltip -->
+        <div class="col-md-4"><button class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip sağda" data-bs-placement="right">Tooltip</button></div>
+
+        <!-- 22. Border -->
+        <div class="col-md-4"><div class="p-3 border border-danger">Border örneği</div></div>
+
+        <!-- 23. Shadow -->
+        <div class="col-md-4"><div class="p-3 shadow">Shadow örneği</div></div>
+
+        <!-- 24. Flex -->
+        <div class="col-md-4"><div class="d-flex justify-content-between bg-light p-2"><span>Sol</span><span>Sağ</span></div></div>
+
+        <!-- 25. Float -->
+        <div class="col-md-4"><div class="float-end bg-info p-2">Float Sağ</div></div>
+
+        <!-- 26. Scrollspy -->
+        <div class="col-md-4"><div class="bg-light p-3" style="height: 100px; overflow-y: scroll;"><a href="#components">Bileşenler</a><br><a href="#utilities">Yardımcılar</a></div></div>
+
+        <!-- 27. Sticky -->
+        <div class="col-md-4"><div class="sticky-top bg-warning p-2">Sticky Top</div></div>
+
+        <!-- 28. HR -->
+        <div class="col-md-4"><hr /></div>
+
+        <!-- 29. Disabled Button -->
+        <div class="col-md-4"><button class="btn btn-secondary" disabled>Disabled</button></div>
+
+        <!-- 30. Disabled Input -->
+        <div class="col-md-4"><input class="form-control" placeholder="Devre dışı" disabled></div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+  <!-- MEDIA -->
+<section id="media">
+  <h2 class="mb-4">🖼️ Görsel ve Medya</h2>
+  <div class="row g-4">
+    <!-- 31. Image - Gerçek Resim -->
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded shadow" alt="Doğa manzarası" />
+      <p class="mt-2 text-center text-muted">Doğa Manzarası</p>
+    </div>
+
+    <!-- 32. Thumbnail -->
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=600&q=80" class="img-thumbnail" alt="Kahve fincanı" />
+      <p class="mt-2 text-center text-muted">Kahve Molası</p>
+    </div>
+
+    <!-- 33. Figure -->
+    <div class="col-md-4">
+      <figure class="figure">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" class="figure-img img-fluid rounded" alt="Laptop üzerinde çalışma">
+        <figcaption class="figure-caption text-center">Çalışma Masası</figcaption>
+      </figure>
+    </div>
+
+    <!-- 34. Embed (Responsive YouTube Video) -->
+    <div class="col-md-6">
+      <h5>YouTube Video (Embed)</h5>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/DLX62G4lc44" title="YouTube video player" allowfullscreen></iframe>
+      </div>
+      <p class="mt-2 text-muted">Kısa Film Tanıtımı</p>
+    </div>
+
+    <!-- 35. Responsive Ratio -->
+    <div class="col-md-6">
+      <h5>Başka Bir Video (Responsive)</h5>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Video" allowfullscreen></iframe>
+      </div>
+      <p class="mt-2 text-muted">Belgesel Fragmanı</p>
+    </div>
+  </div>
+</section>
+
+
+    <hr class="my-5">
+
+    <!-- FORMS -->
+    <section id="forms">
+      <h2 class="mb-4">📋 Form Elemanları</h2>
+      <div class="row g-4">
+        <!-- 36. Input -->
+        <div class="col-md-6"><input class="form-control" placeholder="Email adresiniz"></div>
+
+        <!-- 37. Input Group -->
+        <div class="col-md-6"><div class="input-group"><span class="input-group-text">@</span><input type="text" class="form-control" placeholder="Kullanıcı adı"></div></div>
+
+        <!-- 38. Readonly Input -->
+        <div class="col-md-6"><input class="form-control" value="Sadece okuma" readonly></div>
+
+        <!-- 39. Switch -->
+        <div class="col-md-6"><div class="form-check form-switch"><input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"><label class="form-check-label" for="flexSwitchCheckDefault">Aç/Kapat</label></div></div>
+
+        <!-- 40. Range -->
+        <div class="col-md-6"><input type="range" class="form-range"></div>
+
+        <!-- 41. Checkbox -->
+        <div class="col-md-6"><div class="form-check"><input class="form-check-input" type="checkbox" id="check1"><label class="form-check-label" for="check1">Onayla</label></div></div>
+
+        <!-- 42. Radio -->
+        <div class="col-md-6"><div class="form-check"><input class="form-check-input" type="radio" name="radio1"><label class="form-check-label">Seç</label></div></div>
+
+        <!-- 43. Select -->
+        <div class="col-md-6"><select class="form-select"><option>Seçenek</option></select></div>
+
+        <!-- 44. Floating Label -->
+        <div class="col-md-6"><div class="form-floating"><input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"><label for="floatingInput">Email</label></div></div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- TEXT -->
+    <section>
+      <h2 class="mb-4">📝 Diğer Metin Bileşenleri</h2>
+      <!-- 45. Code -->
+      <pre><code>npm install bootstrap</code></pre>
+
+      <!-- 46. Blockquote -->
+      <blockquote class="blockquote"><p>Bu bir alıntıdır.</p></blockquote>
+
+      <!-- 47. Muted Text -->
+      <p class="text-muted">Soluk bir metin örneği.</p>
+
+      <!-- 48. Text Truncate -->
+      <p class="text-truncate" style="max-width: 200px;">Bu çok uzun bir metin ama sınırlı alanda gösterilecek.</p>
+
+      <!-- 49. Lead -->
+      <p class="lead">Bu öne çıkan bir paragraftır.</p>
+
+      <!-- 50. Small Text -->
+      <p><small>Küçük bir metin örneği</small></p>
+    </section>
+  </div>
+
+  <script>
+    // Enable Toast
+    document.getElementById("showToast").addEventListener("click", () => {
+      const toast = new bootstrap.Toast(document.getElementById("liveToast"));
+      toast.show();
+    });
+
+    // Enable Tooltip
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(el => new bootstrap.Tooltip(el));
+
+    // Enable Popover
+    const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    popoverTriggerList.map(el => new bootstrap.Popover(el));
+  </script>
+</body>
+</html>
